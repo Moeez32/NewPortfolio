@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* .animated-section {
+    opacity: 0;
+    transform: translateY(0px);
+    animation: fadeInUp 1s ease-in both;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} */
+/* html{
+    scroll-behavior: smooth;
+} */
+    
+
+.container {
+   
+    position: sticky;
+    top: 5;
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    justify-content: space-between;
+    background-color: #f08080;
+   
+    text-align: center;
+    align-items: center;
+}
+
+ul li { 
+   
+    display: inline-block;
+}
+
+nav {
+    margin: 0px 100px;
+    position: sticky;
+}
+
+ul li a {
+    font-size: 1.3em;
+    margin-left: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    /* text-decoration: underline; */
+    color: white;
+    transition: .5s ease;
+}
+
+span {
+    cursor: pointer;
+    color: white;
+    font-size: x-large;
+}
+
+.body {
+    background-image: url(bggimg.png);
+    color: white;
+    width: 100%;
+    height: 90%;
+}
+
+.body h1 {
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.text{
+     width: 500px;
+    /* text-align: left; */
+    color: black;
+    /* background-color: blueviolet; */
+    height: 200px;
+    margin-left: 50px;
+}
+
+.image {
+    flex: 1;
+     text-align: right; 
+    margin-right: 110px;
+}
+
+img {
+    width: 300px;
+}
+
+.title{
+    font-size: x-large;
+    font-family: "Montserrat", sans-serif;
+    background-color: #f4978e;
+    height: 50px;
+    text-align: center;
+    color: black;
+    margin-top: 20px;
+    font-weight: 500;
+
+}
+.title p{
+    position: relative;
+    top: 10px;
+}
+html {
+    scroll-behavior: smooth;
+}
+.componants{
+   /* animation: animate 5s linear 5s infinite alternate forwards; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 200px);
+     margin: 5px;
+     background-color: #8b3769;
+}
+.first{
+    
+    font-family: "Montserrat", sans-serif;
+      /* grid-row: 1/2; */
+    width: 70%;
+    background-color:  rgba(187, 181, 181, 0.388);
+}
+.second{
+    
+    font-family: "Montserrat", sans-serif;
+    width: 70%;
+    background-color: rgba(187, 181, 181, 0.388);
+}
+.third{
+    font-family: "Montserrat", sans-serif;
+    width: 70%;
+    background-color: rgba(187, 181, 181, 0.388);
+}
+.text button{
+
+    padding: 10px 40px ;
+    border-radius: 5px ;
+    outline: none;
+    border: none;
+    background-color: #9e005ac9;
+    font-size: 1.2em;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    margin-left: 60%;
+   
+}
+.text button:hover{
+    background-color: #8b37699b;
+}
+.text  p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.4em;
+}
+button a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.footer{
+
+    /* width: 100%; */
+    height: 500;
+    background-color: #8b3769;
+    /* display: grid; */
+    font-family: "Montserrat", sans-serif;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(3, 0px);
+   gap: 0px;
+   /* margin: 50px; */
+}
+.item1{
+    margin-left: 60px;
+    /* background-color: white; */
+    /* width: 20%; */
+    color: black;
+}
+.item3{
+    margin-left: 60px;
+    background-color: white;
+    /* width: 10%; */
+}
+.item2{
+    
+    margin-left: 60px;
+    background-color: white;
+    /* width: 10%; */
+}
+.footer h1{
+    color: white;
+
+    margin-left: px;
+}
+.copyright{
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+    bottom: 60px;
+    left: 35%;
+    font-size: 1.4em;
+    color: white;
+}
+
+.item1,.item2,.item3{
+
+    animation: 1s ease-in-out 1s both running footer;
+   
+   opacity:0;
+   
+   transform: translateY(100px);
+}
+
+    @keyframes footer {
+        to{
+            opacity:1;
+            transform: translateY(0);
+        }
+        
+    }
+
+    .content p, h1, button{
+
+        animation: 1s ease-in 0s forwards running sliderText;
+        transform: translateY(200px);
+        opacity: 0;
+    }
+    @keyframes sliderText {
+        to{
+            opacity: 1;
+            transform: translateY(0);
+        }   
+    }
+
+    .image{
+        animation: 1s ease-in 0s forwards  SlideImg;
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    
+    @keyframes SlideImg {
+        to{
+            opacity: 1;
+            transform: translateY(0);
+        }   
+    }
+    .copyright{
+        animation: 1s ease-in 1s forwards running slidecopyright;
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    @keyframes slidecopyright {
+        to{
+            opacity: 1;
+            transform: translateY(0);
+        }   
+    }
+    .componants{
+        animation: 1s ease-in 1s forwards running slidecomponants;
+        transform: translateY(200px);
+        opacity: 0;
+    }
+    @keyframes slidecomponants{
+        to{
+            opacity: 1;
+            transform: translateY(0);
+        }   
+
+    }
+
+    .form{
+        margin: 50px;
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        /* background-color: black; */
+    }
+    .form input{
+        font-family: "Montserrat", sans-serif;
+        width: 100%;
+        padding: 10px 10px 10px 10px;
+        
+        
+    }
+    label{
+        font-family: "Montserrat", sans-serif;
+        margin-bottom: 10px;
+        font-size: 1.2em;
+        font-weight: 500;
+    }
+    .btn {
+        font-size: 1.2em;
+        margin-top: 10px;
+        background-color: black;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    .btn:hover{
+        background-color: rgba(0, 0, 0, 0.783);
+    }
+    .form-heading h3{
+      position: relative;
+        font-family: "Montserrat", sans-serif;
+        font-size: 2em;
+        left: 50px;
+        top: 20px;
+       
+
+    }
+    .form, .form-heading{
+        animation: 1s ease-in 1s forwards running formslide;
+        transform: translateY(200px);
+        opacity: 0;
+    }
+    @keyframes formslide{
+        to{
+            opacity: 1;
+            transform: translateY(0);
+        }   
+
+    }
+    .about-section{
+        display: flex;
+        justify-content: space-between;
+        margin: 200px;
+    }
+    /* About Self */
+.aboutself {
+    font-size: 1.3em;
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    line-height: 1.5;
+    margin: 0 auto; /* Center align the div */
+    padding: 20px; /* Add some padding for better readability */
+    /* box-sizing: border-box; Ensure padding is included in the width */
+    /* border: 1px solid #ddd; Optional: Add a border for visual separation */
+    /* background-color: #f9f9f9; Optional: Add a background color */
+}
+
+/* Heading inside .aboutself */
+.aboutself h3 {
+    margin: 0; /* Remove default margin */
+    font-size: inherit; /* Ensure it follows the parent's font size */
+    font-weight: normal; /* Adjust font weight if needed */
+}
+.aboutself h1{
+    /* background-color: #8b3769; */
+    font-size: 1.2em;
+    width: 100%;
+}
+.aboutself a{
+    background-color: #8b3769;
+    padding: 10px 18px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.7em;
+    /* border: none; */
+    font-weight: bold;
+    position: relative;
+    top: 40px;
+    /* border-radius: 5px; */
+    
+    /* cursor: pointer; */
+    text-decoration: none;
+}
+.aboutself a:hover{
+    background-color: #8b376997;
+}
